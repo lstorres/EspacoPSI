@@ -114,11 +114,16 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         display: none;
     }
     header{
-        height: 180px;
+        /*height: 180px;*/
         position: relative;
         /*padding: 20px;*/
+        float: left;
         border: solid;
         box-sizing: border-box;
+    }
+    .nav{
+        float: left;
+        width: 100%;
     }
     #div_logo{
         position: relative;

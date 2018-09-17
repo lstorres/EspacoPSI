@@ -16,7 +16,6 @@
         <div id="div_logo">
             <img id="logo_header" src="Imagens/logo_1.png" alt=""/>
             <h1>"Espaço PSI"</h1>
-            <!--<img src="Imagens/img_psicologia.svg"/>-->
             <div class="div_HeaderNomes">
                 <h2 id="header_Name">Romildo Santos</h2>
                 <h3 id="header_Crp">CRP-05/45548</h3>
