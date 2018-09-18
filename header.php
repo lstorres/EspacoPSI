@@ -16,11 +16,11 @@
         <div id="div_logo">
             <img id="logo_header" src="Imagens/logo_1.png" alt=""/>
             <h1>"Espaço PSI"</h1>
-            <div class="div_HeaderNomes">
+            <div class="div_HeaderNomes_left">
                 <h2 id="header_Name">Romildo Santos</h2>
                 <h3 id="header_Crp">CRP-05/45548</h3>
             </div>
-            <div class="div_HeaderNomes">
+            <div class="div_HeaderNomes_right">
                 <h2 id="header_Name">Raquel Sousa</h2>
                 <h3 id="header_Crp">CRP-05/45638</h3>
             </div>
@@ -36,3 +36,4 @@
         <a id="btnContato" href="contato.php">Contato</a>
     </div>
           </header>  
+    <div class="row"> </div>

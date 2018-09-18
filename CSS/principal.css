@@ -87,6 +87,9 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         margin-right: auto;
         margin-top: 20px;
     }   
+    .row{   
+        clear: both;
+    }
     .div_localizacao{
         width: 40%;
         height: 450px;
@@ -114,10 +117,8 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         display: none;
     }
     header{
-        /*height: 180px;*/
         position: relative;
-        /*padding: 20px;*/
-        float: left;
+       float: left;
         border: solid;
         box-sizing: border-box;
     }
@@ -127,19 +128,23 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
     }
     #div_logo{
         position: relative;
-        margin: auto;
         width: 80%;  
-        /*height: 0px;*/
         position: relative;
+        margin-left: auto;
+        margin-right: auto;
     }
     #logo_header{
         float: right;
     }
-    .div_HeaderNomes{
+    .div_HeaderNomes_left{
         float: left;
-        /*border: solid;*/
-        margin-left: 15.5%;        
-        margin-top: 1%;
+        margin-left: 10%;  
+        text-align: right;
+    }
+    .div_HeaderNomes_right{
+        float: right;
+        margin-right: 12%;
+        text-align: left;
     }
     .div_Imagens{
         padding-top: 10px;
@@ -149,7 +154,6 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         text-align: left;
         margin: 10px 60px;
     }
-
     .div_mainQuemSomos{
         width: 40%;
         float: right;
@@ -178,7 +182,6 @@ header{
 header h1{
     padding-top: 30px;
     text-transform: uppercase;
-    margin-left: 15%;
     font-size: 35px;
 }
 header h2{
@@ -311,3 +314,17 @@ footer p{
 .fa quote-left, .fa quote-right{
     
 }
+.box_grid{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196F3;
+      grid-gap: 10px;
+      justify-content: space-around;
+}
+      .box1{
+      padding: 10px;
+      border: solid;
+      background-color:  #2196F3;
+/*      grid-row-start: 1;
+      grid-row-end:2;*/
+      }
