@@ -1,33 +1,12 @@
 //   carrega as variáveis (incorpora os elementos HTML)
-console.log("JS carregado");
+console.log("principal.js");
+//          Mudança de conteúdo da div main    
 
-var menu = document.querySelector('#menu');
-var nav = document.querySelector(".nav");
-var main = document.querySelector(".main");
-var mainContent = document.querySelector("#mainContent");
-var area = document.querySelector("#area");
-var marcarUmaConsulta = document.getElementById("marcarUmaConsulta");
-var titulo_mainContent = document.getElementById("titulo_mainContent");
-var btnHome = document.getElementById("btnHome");
-var btnQuemSomos = document.getElementById("btnQuemSomos");
-var btnConsultorio = document.getElementById("btnConsultorio");
-var btnPublicacoes = document.getElementById("btnPublicacoes");
-var btnContato = document.getElementById("btnContato");
-var div_Imagens = document.querySelector(".div_Imagens");
-var imgId = document.getElementById("imgId");
-var div_localizacao = document.querySelector(".div_localizacao");
+//btnCriarPublicacao.addEventListener('click', function criarPublicacao (){
+//    
+//
+//});
 
-
-//          Abertura do menu para mobile
-menu.addEventListener('click', function (e) {
-    nav.classList.toggle('open');
-    e.stopPropagation();
-});
-nav.addEventListener('click', function (e) {
-    nav.classList.remove('open');
-});
-
-//          Mudança de conteúdo da div main                         
 function getTextoHome() {
    
     main.classList.remove('hide');
@@ -78,42 +57,6 @@ btnPublicacoes.addEventListener('click', function (){});
 
 //          Exibe o formulário de contato que está no método getTextoContato
 //marcarUmaConsulta.addEventListener('click', getTextoContato);
-
-//          Apresentação de slides
-var array1 = new Array('Imagens/1.jpeg', 'Imagens/2.jpeg', 'Imagens/3.jpeg', 'Imagens/4.jpeg', 'Imagens/5.jpeg', 'Imagens/6.jpeg');
-var posicao = 0;
-
-function comeco() {
-    imgId.src = array1[posicao];
-    console.log("comeo executado");
-}
-
-function mais() {
-    posicao++;
-    if (posicao > 5)
-    {
-        posicao = 0;
-    }
-    imgId.src = array1[posicao];
-    console.log(posicao);
-}
-
-function menos() {
-    posicao--;
-    if (posicao < 0)
-    {
-        posicao = 5;
-    }
-    imgId.src = array1[posicao];
-    console.log(posicao);
-}
-
-//            function regular(){
-//            imgId.src = array1[posicao];
-//            setTimeout("regular()", 1);
-//            }
-
-document.body.onload = comeco();
 
 //          document.body.onload = métodoASerCarregado; > carrega o método junto com o body
 //document.body.onload = getTextoHome();

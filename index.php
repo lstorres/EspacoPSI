@@ -10,9 +10,9 @@ and open the template in the editor.
     <div class="container">
         <section class="main"> 
                    <h2 id="titulo_mainContent"></h2>
-                   <p id="mainContent">O espaço PSI, é um consultório de psicologia e psicanálise criados pelos psicólos Raquel Soares e Romildo Santos.
-                       O consultório fica localizado perto do metro da praça Saes Pena na tijuca , na galera 344 na praça, trabalhamos de segunda a sábado, 
-                       sendo o período diurno voltado para a terpia infantil com a psicóloga Raquel, e o período noturno e aos sábados com o psicanalista Romildo.</p>
+                   <p id="mainContent">O espaço PSI, é um consultório de psicologia/psicanálise fundado pelos psicólogos Raquel Soares e Romildo Santos.
+                       O consultório fica na na galera 344, próximo do metro da praça Saes Pena na tijuca.</p> 
+                   <p>Atendemos de segunda a sábado, sendo o período diurno voltado para a terpia infantil com a psicóloga Raquel, e o período noturno e aos sábados com o psicanalista Romildo.</p>
                    <a id='marcarUmaConsulta' href='contato.php'>Marcar uma consulta.</a>
        </section>
     </div>

@@ -16,6 +16,11 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
     margin: 0px;
     box-sizing: border-box;
 }
+.clearfix::after{
+    display:block;
+    content: "";
+    clear:both;
+}
 
 @media screen and (max-width:400px){
     
@@ -23,31 +28,42 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         position: relative;
         /*overflow: auto;*/
     }
+    header h1{
+        margin-bottom: 3vw;
+        font-size: 8vw;
+    }
+    header h2{
+        font-size: 6vw;
+    }
+    header h3{
+        font-size: 4vw;
+    }
     #div_logo{
-        width: 50%;   
+        width: 70vw;   
         margin: auto;
     }
-    #header_title{
-        /*border: solid black;*/
-        padding-bottom: 20px;
+    #logo_header{
+        width: 30vw;
     }
     #div_menuBtn{
-        padding: 10px;
+        margin-top: 5px;
+        padding: 5px;
+        background-color: #e2e6ea;
+        text-align: left;
     }
     #menu{
-        display: block;
-        height: 40px; 
-        margin-left: 20px;
-        box-shadow: 0em 0em 0.2em;
+        /*display: block;*/
+        margin: 10px;
+        font-size: 9vw;
     }
     .nav{
         position: absolute;
         display: block;
-        -webkit-transform: translate(-400px, 0);
-        transform: translate(-400px, 0);
+        -webkit-transform: translate(-600px, 0);
+        transform: translate(-600px, 0);
         transition: transform 0.3s ease;
         display: inline-table;
-    }
+    } 
     .nav.open {
         margin-bottom: 10px;
         position: relative;
@@ -61,21 +77,29 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         font-size: 13px;
         display: block;
     }
-    #localizacao{
-        display: none;
+    iframe{
+        width: 60vw;
+        margin: 2vh;
     }
-    .div_Imagens{
-        padding-top: 10px;
-        /*width: 50%;*/
-        margin: auto;
-        /*border: solid;*/
+    .div_Imagens, .div_localizacao{
+        padding: 2vh;
+        margin-top: 2vh;
         text-align: center;
+    }
+    .fa-angle-left, .fa-angle-right{
+        font-size: 6vw;
     }
     #imgId{
         width: 80%;
     }
     .div_mainQuemSomos{
         float: none;
+        margin: 4vw 2vw;
+    }
+    #img_QuemSomos{
+        float: none;
+        width: 23vw;
+        margin: 3vw;
     }
 }
 
@@ -90,28 +114,31 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
     .row{   
         clear: both;
     }
-    .div_localizacao{
-        width: 40%;
-        height: 450px;
+    .div_mainConsultorio{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-areas: "imagens localizacao";
+        justify-content: center;
+        grid-gap: 3vw;
+    }
+    .div_localizacao, .div_Imagens{
+        margin-top: 20px;
+        text-align: center;
         padding: 20px;
-        margin-top: 10px;
-        float: right;
-        margin-right: 9.5%;
+    }
+    .div_localizacao{
+        grid-area:localizacao;
     }
     iframe{
-        width: 70%;
-        height: 350px;
+        width:30vw;
+        height: 120vh;
     }
     .div_Imagens{
-        height: 450px;
-        width: 40%;
-        margin-top: 10px;
-        margin-left: 9.5%;
-        float: left;
-        
+        grid-area:imagens;
     }
     #imgId{
-        width: 60%;
+        margin-top: 2vh;
+        width: 25vw;
     }
     #menu{
         display: none;
@@ -128,13 +155,14 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
     }
     #div_logo{
         position: relative;
-        width: 80%;  
+        width: 65vw;  
         position: relative;
         margin-left: auto;
         margin-right: auto;
     }
     #logo_header{
         float: right;
+        width: 13vw;
     }
     .div_HeaderNomes_left{
         float: left;
@@ -146,20 +174,59 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         margin-right: 12%;
         text-align: left;
     }
-    .div_Imagens{
-        padding-top: 10px;
-        text-align: center;
+    .fa-angle-left, .fa-angle-right{
+        font-size: 4.5vw;
     }
     .div_Imagens h2, .div_localizacao h2{
-        text-align: left;
+/*        text-align: left;*/
         margin: 10px 60px;
     }
     .div_mainQuemSomos{
-        width: 40%;
+        width: 45vw;
+        float: right;
+        margin: 2vw;  
+    }
+    #img_QuemSomos{
+        width: 13vw;
+    }
+    .quemSomos_Raquel{
         float: right;
     }
-}
-/*---------------------------------------------
+    .quemSomos_Romildo{
+        float: left;
+    }
+    .box_Grid{
+        background-color:  #138496;
+        margin-top: 10px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 3vw;
+        justify-content: space-around;
+    }
+    aside{
+        grid-column-start: 2;
+        /*width: 20vw;*/
+    }
+    aside li{
+        width: 20vw;
+        padding: 5px;
+        list-style: none;
+        background-color: #F2F2F2;
+        text-align: center;
+    }
+    .pub_Main{ 
+        background-color:  #F2F2F2;
+        grid-column: 3/6;
+    }
+    .pub_Main p {font-family: "Montserrat" ; padding: 10px; color: #138496;}
+    
+    .form_webManager{
+        display: block;
+    }
+}/*fecha @media*/
+
+    /*---------------------------------------------
 -----------------------------------------------*/
 body{
     background-color: #F2F2F2;
@@ -175,22 +242,15 @@ header{
     font-style:  normal;
     color:  #117a8b;
     width: 100%;
-}
-#logo_header{
-    width: 150px;
-    }   
+}  
 header h1{
     padding-top: 30px;
     text-transform: uppercase;
-    font-size: 35px;
 }
 header h2{
-    font-size: 20px;
     margin: auto;
 }
 header h3{
-    font-size: 16px;
-    padding-top: 10px;
     font-weight: normal;
 }
 .nav{
@@ -225,21 +285,24 @@ header h3{
 .div_mainQuemSomos{
     padding: 10px;
     background-color:  #d6d8d9;
-    margin: 1% 3%;
 }
 #img_QuemSomos{
     float: right;
-    width: 40%;
 }
-.main.hide{
+.hide{
     display: none;
-}
-.container h2, .container h3, .container p{
-    margin: 10px 0px;
 }
 .main p{
     /*margin-top: 15px;*/ 
     font-size: 1em;
+}
+.div_localizacao h3, .div_Imagens h3{
+    font-size: 1.5em;
+    margin: 2vh;
+}
+.div_localizacao p, .div_Imagens p{
+    font-size: 1.2em;
+    margin-top: 4vh;
 }
 fieldset{
     margin: 0px 30px;
@@ -257,28 +320,9 @@ textarea{
     font-family: open sans;
     color: darkslategre;
 }
-#marcarUmaConsulta.hide{
-    display: none; 
-} 
-.div_Imagens{
-    padding: 10px; 
-    position: relative;
-}
-.div_Imagens.hide{
-    display: none; 
-}
-.div_localizacao{
- padding: 10px
-}
-.div_localizacao.hide{
-    display: none;    
-}
 #marcarUmaConsulta:hover{
     color: blue;
     text-decoration: underline;
-}
-.div_localizacao{
-    text-align: center;
 }
 footer{
     width: 100%;
@@ -300,9 +344,8 @@ footer p{
 /*____ícones________________*/
 
 .fa-angle-left, .fa-angle-right{
-    font-size: 40px;
     color:  #b9bbbe;
-    margin: 10px 25px;
+    margin: 2vh 4vw;
  }
 .fa-phone{
     transform: rotate(90deg);
@@ -310,21 +353,3 @@ footer p{
 .fa-phone, .fa-facebook-square,.fa-instagram,.fa-envelope::before{
     margin-right: 10px;
 }
-
-.fa quote-left, .fa quote-right{
-    
-}
-.box_grid{
-      display: grid;
-      grid-template-columns: auto auto auto;
-      background-color: #2196F3;
-      grid-gap: 10px;
-      justify-content: space-around;
-}
-      .box1{
-      padding: 10px;
-      border: solid;
-      background-color:  #2196F3;
-/*      grid-row-start: 1;
-      grid-row-end:2;*/
-      }

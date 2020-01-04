@@ -26,7 +26,7 @@
             </div>
         </div>
     <div id="div_menuBtn">
-        <button id="menu">menu</button>
+        <i class="fas fa-bars" id="menu"></i>
     </div>
     <div class="nav">
         <a id="btnHome" href="index.php">Home</a>

@@ -1,26 +1,14 @@
-<?php // include ("header.php");?>
-<html>
-    <head>
-        <title>Espaço PSI</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--<link href="CSS/all.css" rel="stylesheet" type="text/css"/>COM PROBLEMAS-->
-        <link href="CSS/principal.css" rel="stylesheet" type="text/css"/>
-       <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" type="text/css"/>
-         <!-- Para testar atribuir outro CSS com o media
-        <!--<link href="CSS/mobile.css" rel="stylesheet" media="screen and (min-width:500px)">-->
-        <!-- ícone da aba-->
-        <link href="Imagens/logo_favIcon.png" rel="icon" type="image/x-icon"/>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Handlee|Neucha|Coming Soon|Itim" rel="stylesheet">
-    </head>
-    <body>
-        <div class="box_grid">
-            <div class="box1">a</div>
-            <div class="box1">a</div>
-            <div class="box1">a</div>
-        </div>    
-    </body>
-</html>
-<?php // include ("footer.php");?>
+<?php include("header.php");?>
+        <div class="box_Grid">
+            <aside>
+                <li id="pub_MatAcademicos">Materiais Academicos</li>
+                <li id="pub_Psicanalise">Psicanálise</li>
+                <li id="pub_CasosClinicos">Casos Clinicos</li>
+                <li id="pub_Ilustracoes">Ilustrações</li>
+            </aside>
+            <li id="criarPublicacao">Criar publicacao</li>
+            <div class="pub_Main"><a href="arquivos/001.pdf">Arquivo 1.pdf</a> <br> 
+        </div>
+<?php include ("footer.php");?>
 
 
