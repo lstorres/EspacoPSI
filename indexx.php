@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <?php include("header.php");?>  
     <div class="container">
-.       <section class="main"> 
+        <section class="main"> 
                    <h2 id="titulo_mainContent">Espaço PSI</h2>
                    <br>
                    <p>"Nenhum ser humano é capaz de esconder um segredo. Se a boca se cala, falam as pontas dos dedos."  <sub><i>Sigmund Freud</i></sub></p>
@@ -18,5 +18,5 @@ and open the template in the editor.
                    
                    <a id='marcarUmaConsulta' href='contato.php'>Marcar uma consulta.</a>
        </section>
-    </div>
+    </div>-->
  <?php include ("footer.php");?>

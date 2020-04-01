@@ -1,7 +1,7 @@
 <?php include ("header.php");?>
     <?php
     ?> 
-<div class="main">
+.<div class="main">
     <p>Encaminhe suas dúvidas e solicitações de consultas pelo formulário. </p>
                 <br>
                 <div id='area'>
