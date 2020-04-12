@@ -1,0 +1,76 @@
+@media screen and (min-width:500px){	
+
+	.main{
+		margin: auto;
+	    display: grid;
+	}
+
+	.main p{
+		font-size: 1.2em;
+		border-bottom: 1px solid lightgray;
+		margin-bottom: 4%;
+	}
+
+	.contato-icon{
+		width: 17%;
+		float: right;
+	}
+
+	.grid-area{
+		width: 70%;
+		margin: 0px 5% 3%;
+		display: inline-grid;
+		grid-template-columns: 0fr 1fr;
+		grid-row-gap: 4%;
+	}
+	.grid-area textarea input{
+		grid-column-start: 2;
+		grid-column-end:2;
+	}
+
+	.grid-area textarea{
+		vertical-align: middle;
+		overflow: auto;
+		resize: vertical;
+		width: 100%;
+	}
+
+	.grid-area input{
+		width: 100%;
+		vertical-align: sub;
+	}	
+	.grid-area label{
+		grid-column-start: 1;
+		grid-column-end:1;
+	}
+	.btn_submit{
+		grid-column-start: 2;
+		width: 15%!important;
+	}
+}
+@media screen and (max-width:499px){
+	.contato-icon{
+		display: none;
+	}
+	.main{
+		width: 95%;
+		margin: 2% auto;
+	}
+
+	.grid-area{
+		width: 100%;
+    	margin-bottom: 17px;
+		display: inline-grid;
+		grid-template-columns: 0fr 1fr;
+		grid-row-gap: 4%;
+	}
+
+	#formulario{    
+		font-size: 13px;
+	}
+	.btn_submit{
+	grid-column-start: 2;
+    width: 26%!important;
+    margin-left: 70%;
+	}
+}

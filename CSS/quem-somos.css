@@ -1,0 +1,79 @@
+@media screen and (min-width:500px){
+	.quem-somos-wrapper{
+		display: inline-grid;
+		grid-template-columns: repeat(6, 1fr);
+		margin: 2% 4%;
+		grid-gap: 3%;
+	}
+	.quem-somos-box{
+	    border-radius: 9px 39px;
+		grid-column: span 3;
+		grid-template-columns: repeat(3, 1fr);
+		background-color: #7ea7ba5e;
+		padding: 5% 7%;
+	    box-shadow: 1px 2px 4px -2px;	
+	}
+
+	.professional-name{
+	    float: left;
+	    width: 60%;
+	    margin-bottom: 2%;
+	}
+	.name{
+		font-size: 1.6em;
+	}
+	.profession{
+		font-size: 1.1em;
+	}
+	.professional-curriculo{
+		text-align: justify; 
+		width: 68%;
+	}
+	.professional-image{
+		position: relative;
+		float: right;
+		width: 32%;	
+		margin-bottom: 1%;	
+	}
+}
+@media screen and (max-width:499px){
+
+	.quem-somos-wrapper{
+		display: inline-grid;
+		grid-template-columns: repeat(3, 1fr);
+		margin: 5% 4%;
+		grid-gap: 1%;
+	}
+	.quem-somos-box{
+		grid-column: span 3;
+		grid-template-columns: repeat(3, 1fr);
+		background-color: #7ea7ba5e;
+		padding: 2% 4%;
+		box-shadow: 1px 0px 4px -1px
+	}
+
+	.professional-name{
+	    float: left;
+	    width: 50%;
+	    margin-bottom: 2%;
+	}
+	.name{
+		font-size: 1.3em;
+	}
+	.profession{
+		font-size: 0.9em;
+	}
+	.professional-curriculo{
+		margin-top: 2% 0px;
+		text-align: justify; 
+		clear: both;
+		font-size: 0.7em;
+	}
+	.professional-image{
+		position: relative;
+		float: right;
+		width: 38%;	
+		margin-bottom: 1%;	
+		margin-left: 19px;
+	}
+}

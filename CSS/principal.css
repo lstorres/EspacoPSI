@@ -1,19 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 21-May-2018, 17:43:53
-    Author     : lucas
-*/
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
-
 *{
-    margin: 0px;
     box-sizing: border-box;
 }
 .clearfix::after{
@@ -22,95 +7,50 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
     clear:both;
 }
 
-@media screen and (max-width:400px){
+@media screen and (min-width:500px){
     
-    header{
-        position: relative;
-        /*overflow: auto;*/
+    .logo-image{
+        width: 9%;
+        margin-left: 4%;
     }
-    header h1{
-        margin-bottom: 3vw;
-        font-size: 8vw;
-    }
-    header h2{
-        font-size: 6vw;
-    }
-    header h3{
-        font-size: 4vw;
-    }
-    #div_logo{
-        width: 70vw;   
-        margin: auto;
-    }
-    #logo_header{
-        width: 30vw;
-    }
-    #div_menuBtn{
-        margin-top: 5px;
-        padding: 5px;
-        background-color: #e2e6ea;
-        text-align: left;
-    }
-    #menu{
-        /*display: block;*/
-        margin: 10px;
-        font-size: 9vw;
-    }
-    .nav{
-        position: absolute;
-        display: block;
-        -webkit-transform: translate(-600px, 0);
-        transform: translate(-600px, 0);
-        transition: transform 0.3s ease;
-        display: inline-table;
-    } 
-    .nav.open {
-        margin-bottom: 10px;
-        position: relative;
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
-        transition: transform 0.3s ease;
-        width: 100%;
+
+    .logo-text{
         
     }
-    .nav.open a{
-        font-size: 13px;
-        display: block;
-    }
-    iframe{
-        width: 60vw;
-        margin: 2vh;
-    }
-    .div_Imagens, .div_localizacao{
-        padding: 2vh;
-        margin-top: 2vh;
-        text-align: center;
-    }
-    .fa-angle-left, .fa-angle-right{
-        font-size: 6vw;
-    }
-    #imgId{
-        width: 80%;
-    }
-    .div_mainQuemSomos{
-        float: none;
-        margin: 4vw 2vw;
-    }
-    #img_QuemSomos{
-        float: none;
-        width: 23vw;
-        margin: 3vw;
-    }
-}
 
-@media screen and (min-width:403px){
+    .online-icon{
+        vertical-align: top;
+        width: 30%; 
+        float: right;
+    }
 
+    .ideas-icon{
+        width: 10%;
+        float: right;
+    }
+    .joy-icon, .happy-icon{
+        width: 10%;
+    }
+
+    .atendimentos-online{
+        margin-top: 8%;
+    }
+    .atendimentos-online img{
+        margin-right: 2%;
+    }
     .main{
         width: 81%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
-    }   
+        box-shadow: 1px 1px 7px -2px;
+        padding: 20px;
+    }
+    .container{
+        display: grid;
+        width: 85%!important;
+    }
+
     .row{   
         clear: both;
     }
@@ -145,13 +85,18 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
     }
     header{
         position: relative;
-       float: left;
-        border: solid;
+        float: left;
         box-sizing: border-box;
+        padding-bottom: 1%;   
     }
     .nav{
         float: left;
         width: 100%;
+    }
+    .nav a{    
+        padding: 0.7% 2%;
+        font-weight:  500;
+        font-size: 16px;
     }
     #div_logo{
         position: relative;
@@ -178,7 +123,7 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         font-size: 4.5vw;
     }
     .div_Imagens h2, .div_localizacao h2{
-/*        text-align: left;*/
+        /*        text-align: left;*/
         margin: 10px 60px;
     }
     .div_mainQuemSomos{
@@ -187,7 +132,7 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         margin: 2vw;  
     }
     #img_QuemSomos{
-        width: 13vw;
+        width: 11vw;
     }
     .quemSomos_Raquel{
         float: right;
@@ -206,7 +151,6 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
     }
     aside{
         grid-column-start: 2;
-        /*width: 20vw;*/
     }
     aside li{
         width: 20vw;
@@ -220,136 +164,142 @@ font-family: 'Montserrat', sans-serif;|Handlee|Neucha|Slabo+27px*/
         grid-column: 3/6;
     }
     .pub_Main p {font-family: "Montserrat" ; padding: 10px; color: #138496;}
-    
+
     .form_webManager{
         display: block;
     }
 }/*fecha @media*/
 
     /*---------------------------------------------
------------------------------------------------*/
-body{
-    background-color: #F2F2F2;
-    font-family: 'Montserrat';
-}
-header, .main, footer, .div_Imagens, .div_localizacao{
-    box-shadow: 0em 0em 0.1em;
-    background-color: white;
-}    
-header{
-    text-align: center;    
-    font-family: 'Lucida Handwriting', sans-serif;
-    font-style:  normal;
-    color:  #117a8b;
-    width: 100%;
-}  
-header h1{
-    padding-top: 30px;
-    text-transform: uppercase;
-}
-header h2{
-    margin: auto;
-}
-header h3{
-    font-weight: normal;
-}
-.nav{
-    margin-top: 0px;
-    text-align: center;
-    background-color: #138496;
-    /*equivalencia do tamanho da ul e da li*/
-    overflow: hidden;
-    box-shadow: 0em 0.1em 0.1em;
-}
-.nav a{    
-    display: inline-block;
-    padding:20px;
-    background-color: #138496;
-    color: #ffffff;
-    font-family: 'Open sans', sans-serif !important;
-    font-weight:  500;
-    font-size: 16px;
-    text-transform:  uppercase;
-    text-decoration: none;
-    /*border: solid;*/
-}
-.nav a:hover{
-    color: black;
-    background-color: #F2F2F2;
-    transition: all 0.4s ease;
-}    
-.main{
-    margin-top: 20px;
-    padding: 20px;
-}
-.div_mainQuemSomos{
-    padding: 10px;
-    background-color:  #d6d8d9;
-}
-#img_QuemSomos{
-    float: right;
-}
-.hide{
-    display: none;
-}
-.main p{
-    /*margin-top: 15px;*/ 
-    font-size: 1em;
-}
-.div_localizacao h3, .div_Imagens h3{
-    font-size: 1.5em;
-    margin: 2vh;
-}
-.div_localizacao p, .div_Imagens p{
-    font-size: 1.2em;
-    margin-top: 4vh;
-}
-fieldset{
-    margin: 0px 30px;
-    padding: 20px;
-}
-label{
-    padding-right:  30px;
-}
-textarea{
-    margin-bottom: 10px; 
-}
-#marcarUmaConsulta{
-    display: block;
-    margin-top: 30px;
-    font-family: open sans;
-    color: darkslategre;
-}
-#marcarUmaConsulta:hover{
-    color: blue;
-    text-decoration: underline;
-}
-footer{
-    width: 100%;
-    height: 80px;
-    margin-top: 25px;
-    padding:15px;
-    float:left;
-    text-align: center;
-}
-footer p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    margin: 3px 10px;
-    padding: auto;
-    display: inline;
-}
+    -----------------------------------------------*/
+    body{
+        margin: 0px;
+        background-color: #F2F2F2;
+        font-family: 'Montserrat';
+    }
+    header, .main, footer, .div_Imagens, .div_localizacao{
+        background-color: white;
+    }    
+    header{
+        text-align: center;    
+        font-family: 'Lucida Handwriting', sans-serif;
+        font-style:  normal;
+        color:  #117a8b;
+        width: 100%;
+    }  
+    header h1{
+        padding-top: 30px;
+        text-transform: uppercase;
+    }
+    header h2{
+        margin: auto;
+    }
+    header h3{
+        font-weight: normal;
+    }
+    .nav{
+        margin-top: 0px;
+        text-align: center;
+        background-color: #138496;
+        /*equivalencia do tamanho da ul e da li*/
+        overflow: hidden;
+        box-shadow: 0em 0.1em 0.1em;
+    }
+    .nav a{    
+        display: inline-block;
+        background-color: #138496;
+        color: #ffffff;
+        font-family: 'Open sans', sans-serif !important;
+        font-weight:  500;
+        text-transform:  uppercase;
+        text-decoration: none;
+    }
+    .nav a:hover{
+        color: black;
+        background-color: #F2F2F2;
+        transition: all 0.4s ease;
+    }    
+    .width-65{
+        width: 65%;
+    }
+    .text-justify{
+        text-align: justify;
+    }
+    .main{
+        padding: 20px;
+    }
+    .margin-top-2{
+        margin-top:2%;
+    }
+    .div_mainQuemSomos{
+        padding: 10px;
+        background-color:  #d6d8d9;
+    }
+    #img_QuemSomos{
+        border: solid 6px white;
+        float: right;
+    }
+    .hide{
+        display: none;
+    }
+    .main p{
+        /*margin-top: 15px;*/ 
+        font-size: 1em;
+    }
+    .div_localizacao h3, .div_Imagens h3{
+        font-size: 1.5em;
+        margin: 2vh;
+    }
+    .div_localizacao p, .div_Imagens p{
+        font-size: 1.2em;
+        margin-top: 4vh;
+    }
+    fieldset{
+        margin: 0px 30px;
+        padding: 20px;
+    }
+    label{
+        padding-right:  30px;
+    }
+    textarea{
+        margin-bottom: 10px; 
+    }
+    #marcarUmaConsulta{
+        display: block;
+        margin-top: 30px;
+        font-family: open sans;
+        color: darkslategre;
+    }
+    #marcarUmaConsulta:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+    footer{
+        width: 100%;
+        height: 80px;
+        margin-top: 25px;
+        padding:15px;
+        float:left;
+        text-align: center;
+    }
+    footer p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        margin: 3px 10px;
+        padding: auto;
+        display: inline;
+    }
 
 
-/*____ícones________________*/
+    /*____ícones________________*/
 
-.fa-angle-left, .fa-angle-right{
-    color:  #b9bbbe;
-    margin: 2vh 4vw;
- }
-.fa-phone{
-    transform: rotate(90deg);
-}
-.fa-phone, .fa-facebook-square,.fa-instagram,.fa-envelope::before{
-    margin-right: 10px;
-}
+    .fa-angle-left, .fa-angle-right{
+        color:  #b9bbbe;
+        margin: 2vh 4vw;
+    }
+    .fa-phone{
+        transform: rotate(90deg);
+    }
+    .fa-phone, .fa-facebook-square,.fa-instagram,.fa-envelope::before{
+        margin-right: 10px;
+    }

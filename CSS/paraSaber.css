@@ -1,0 +1,123 @@
+.para-saber-wrapper, .para-saber-box{
+	display: inline-grid;
+}
+.para-saber-titulo{
+    margin: 0 0% 2%;	
+    grid-column: span 6;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+.no-border-bottom{
+	border-bottom: 0;
+    box-shadow: 0px 0px 0px 0px !important;
+}
+
+
+@media screen and (min-width:500px){
+	.para-saber-wrapper{
+		padding: 1% 0;
+	    grid-template-columns: repeat(6, 1fr);
+	}
+	.para-saber-box{
+		padding: 13px 0px 22px 0px;		
+		grid-column: span 6;
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-start: 1;
+		grid-column-end: 7;
+		box-shadow: 0px 0px 1px 0px;
+	}
+	.para-saber-box .title{
+		color:#138496;
+		grid-column-start: 2;
+		grid-column-end: 7;
+		font-size: 1.5em;
+	}
+
+	.para-saber-box .title:hover{
+		cursor: pointer;
+		font-weight: 500;
+	}
+
+	.para-saber-box .content{
+		grid-column-start: 2;
+		grid-column-end: 6;
+		text-align: justify;
+		white-space: pre-line;
+		word-wrap: break-word;
+		margin-top: -14px;
+	}
+
+	.odd{
+		background-color: #d0e5ee36;
+	}
+
+	.even{
+
+	}
+
+	.assinatura{
+		grid-column: span 1; 
+		grid-column-start: 5; 
+		margin-bottom: 0rem;
+	}
+}
+
+@media screen and (max-width:499px){
+
+	.para-saber-titulo{
+		margin:0 6% 6%;
+		grid-column: span 6;
+		font-size: 1.4em;
+	}
+	.para-saber-wrapper{	
+		padding: 2% 0;
+		grid-template-columns: repeat(6, 1fr);
+	}
+	.para-saber-box{
+		padding: 13px 0px 22px 0px;		
+		grid-column: span 6;
+		grid-template-columns: repeat(6, 1fr);
+		grid-column-start: 1;
+		grid-column-end: 7;
+		box-shadow: 0px 0px 1px 0px;
+	}
+	.para-saber-box .title{
+		color:#138496;
+		grid-column-start: 1;
+		grid-column-end: 7;
+		margin-left: 5%;
+		font-size: 1.3em;
+	}
+
+	.para-saber-box .title:hover{
+		cursor: pointer;
+		font-weight: 500;
+	}
+
+	.para-saber-box .content{
+	    grid-column: span 6;
+	    text-align: justify;
+	    white-space: pre-line;
+	    word-wrap: break-word;
+	    margin-top: -14px;
+	    padding: 0 6%;
+        font-size: 0.8em;	
+	}
+
+	.odd{
+		background-color: #d0e5ee36;
+	}
+
+	.even{
+
+	}
+
+	.assinatura{
+		grid-column-start: span 4; 
+		grid-column-end: 6; 
+		margin-bottom: 0rem;
+	}
+	.assinatura>p{
+		margin-top: 10px;
+	}
+}
