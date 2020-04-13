@@ -1,0 +1,6 @@
+RewriteEngine on
+DirectoryIndex paginafacil.php default.html index.php index.html index.htm
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

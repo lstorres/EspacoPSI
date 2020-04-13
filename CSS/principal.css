@@ -54,32 +54,6 @@
     .row{   
         clear: both;
     }
-    .div_mainConsultorio{
-        display: grid;
-        grid-template-columns: 40vw 40vw;
-        grid-template-areas: "imagens localizacao";
-        justify-content: center;
-        grid-gap: 3vw;
-    }
-    .div_localizacao, .div_Imagens{
-        margin-top: 20px;
-        text-align: center;
-        padding: 20px;
-    }
-    .div_localizacao{
-        grid-area:localizacao;
-    }
-    iframe{
-        width:30vw;
-        height: 120vh;
-    }
-    .div_Imagens{
-        grid-area:imagens;
-    }
-    #imgId{
-        margin-top: 2vh;
-        width: 25vw;
-    }
     #menu{
         display: none;
     }

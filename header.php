@@ -21,11 +21,11 @@
                 <img class="logo-text"src="imagens/logo.png " alt="">
                 <img class="logo-image" src="imagens/logo_1.png " alt="">
                 <div class="nav navbar justify-content-center">
-                    <a id="btnHome" href="index.php">Home</a>
-                    <a id="btnQuemSomos" href="quemSomos.php">Quem somos</a>
-                    <a id="btnCarreira" href="#">Consultório</a>
-                    <a id="btnMateriais" href="paraSaber.php">Para Saber</a>
-                    <a id="btnContato" href="contato.php">Contato</a>
+                    <a id="btnHome" href="index">Home</a>
+                    <a id="btnQuemSomos" href="quemSomos">Quem somos</a>
+                    <a id="btnCarreira" href="consultorio">Consultório</a>
+                    <a id="btnMateriais" href="paraSaber">Para Saber</a>
+                    <a id="btnContato" href="contato">Contato</a>
                 </div>
             </div>
         </header>
