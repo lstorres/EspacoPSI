@@ -6,7 +6,17 @@
     content: "";
     clear:both;
 }
-
+.success{
+    background: #90ee9099;
+    border-radius: 7px;
+    padding: 5px 30px;
+}
+.error{
+    background: #b65959e3;
+    border-radius: 7px;
+    padding: 5px 30px;
+    color: white;
+}
 @media screen and (min-width:500px){
     
     .logo-image{

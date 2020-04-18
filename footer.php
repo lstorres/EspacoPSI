@@ -1,7 +1,6 @@
          <footer>
             <hr>
              <p id="email"><i class="fas fa-envelope"></i>epsitijuca@gmail.com.br</p>
-                <p id="telefone"><i class="fas fa-phone"></i>+55 021 3176-3838</p> 
                 <p><a href="https://www.facebook.com/EspacoPSITIJUCA">Facebook</a></p>
                 <p style="margin-top: 15px; display: block;">Rua Conde de Bonfim, 344 – Bloco 1 – Sala 1304 , Praça Saens Penna – Tijuca – Rio de Janeiro.</p>
         </footer>
